@@ -1,0 +1,251 @@
+.body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+
+}
+.header{
+    background-color:rgb(57, 72, 85);;
+}
+.animado{
+    opacity: 0;
+    transition: all 1s;
+}
+.mostrarArriba{
+    animation: mostrarArriba 1s
+}
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(60px)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.empresa{
+    font-family: 'Crimson Pro', serif;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.empresa img{
+    width: 3%;
+    position: absolute;
+    margin-left: 41.5%;
+    padding-top: 0.5%;
+}
+.titulo h1{
+    font-size: 80px;
+    color: rgb(173, 130, 73);
+    font-family: 'Rozha One', serif;
+    animation-name: tituloppal;
+    animation-duration: 5s;
+}
+@keyframes tituloppal{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.titulo h2{
+    font-family: 'Rozha One', serif;
+    animation-name: tituloppal;
+    animation-duration: 7s;
+}
+.nuevejulio{
+    width: 25%;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -22%;
+    opacity: 80%;
+    border: 5px solid  rgb(173, 130, 73);
+    animation-name: nuevejulio;
+    animation-duration: 4s;
+}
+@keyframes nuevejulio{
+    0%{
+        margin-top: -40%;
+        opacity: 0%;
+    }
+    100%{
+        margin-top:-22%;
+        opacity: 100%;
+    }
+}
+.camaras{
+    width: 25%;
+    position: absolute;
+    margin-left: 69%;
+    margin-top: -10%;
+    opacity: 90%;
+    border: 5px solid  rgb(173, 130, 73);
+    animation-name: camaras;
+    animation-duration: 5s;
+}
+@keyframes camaras{
+    0%{
+        margin-left: 105%;
+        opacity: 0%;
+    }
+    100%{
+        margin-left: 69%;
+        opacity: 100%;
+    }
+}
+
+.marcastv, .marcanoticias{
+    width: 60%;
+    transition: 1s;
+}
+.reperfilar, .marcaperfil{
+    width: 80%;
+    transition: 1s;
+}
+.marcastv:hover, .marcanoticias:hover, .reperfilar:hover, .marcaperfil:hover{
+    transform: scale(1.2);
+}
+.sectiondos{
+    font-family: 'Rozha One', serif;
+    margin-top: -4%;
+}
+.sectiondos h2{
+    font-size: 50px;
+    color: rgb(173, 130, 73);
+}
+.subtitulo h4{
+    background-color:rgb(57, 72, 85);;
+    padding: 3%;
+    margin-bottom: -3.8%;
+    font-family: 'Crimson Pro', serif;
+}
+.columnauno{
+    background-color: rgb(224, 224, 224);
+}
+.columnauno h3{
+    font-size: 40px;
+
+}
+.columnauno h4{
+    font-family: 'Crimson Pro', serif;
+}
+.columnauno, .columnados{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.columnados h3{
+    line-height: 180%;
+}
+/* section 3 */
+.sectiontres{
+    background-color:rgb(57, 72, 85);
+    padding: 5%;
+}
+.sectiontres h2{
+    color:rgb(173, 130, 73) ;
+    font-family: 'Rozha One', serif;
+    font-size: 50px;
+}
+.pline:hover, .pbrand:hover{
+    background-color: white;
+}
+
+/* section 4 */
+.titulocuatro h2{
+    color:rgb(173, 130, 73) ;
+    font-family: 'Rozha One', serif;
+    font-size: 50px;
+}
+.iconos i{
+    font-size: 50px;
+    color:rgb(57, 72, 85);
+    transition: 0.5s;
+}
+.elemidia{
+    transform: rotate(180deg);
+}
+.iconos h3{
+    color:rgb(173, 130, 73) ;
+    font-family: 'Crimson Pro', serif;
+}
+.iconos i:hover{
+    color:rgb(173, 130, 73) ;
+}
+
+/* dispositivo pequeño */
+@media(max-width: 480px){
+    .titulo h1{
+        font-size: 30px;
+        margin-top: -10%;
+    }
+    .empresa img{
+        width: 7%;
+        position: absolute;
+        margin-left: 27%;
+        padding-top: 1%;
+    }
+    .titulo h2{
+        font-size: 20px;
+    }
+    .nuevejulio{
+        width: 30%;
+        margin-left: 50%;
+        margin-top: -22%;
+        border: 2px solid  rgb(173, 130, 73);
+    }
+    @keyframes nuevejulio{
+        0%{
+            margin-left:101%;
+            opacity: 0%;
+        }
+        100%{
+            margin-left: 50%;
+            opacity: 100%;
+        }
+    }
+    .camaras{
+        width: 30%;
+        margin-left: 65%;
+        border: 2px solid  rgb(173, 130, 73);
+    }
+    @keyframes camaras{
+        0%{
+            margin-left: 105%;
+            opacity: 0%;
+        }
+        100%{
+            margin-left: 65%;
+            opacity: 100%;
+        }
+    }
+    .marcastv, .marcanoticias{
+        width: 100%;
+    }
+    .reperfilar, .marcaperfil{
+        width: 100%;
+    }
+    .columnauno{
+        background-color: rgb(224, 224, 224);
+    }
+    .columnauno h3{
+        font-size: 30px;
+    }
+    .columnauno h4{
+        font-family: 'Crimson Pro', serif;
+    }
+    .columnauno h2, .columnados h2{
+        font-size: 35px;
+    }
+    .datos{
+        margin-top: -15%;
+    }
+    .sectiontres h2{
+        font-size: 30px;
+    }
+    .titulocuatro h2{
+        font-size: 30px;
+    }
+    .iconos i{
+        font-size: 30px;
+    }
+}
