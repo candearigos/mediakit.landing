@@ -358,9 +358,13 @@ margin-left: -15%;
     box-shadow: 4px 4px 7px #999
 }
 .noticiasimg img{
-    width: 75%;
+    width: 45%;
     margin-top: 5%;
     box-shadow: 4px 4px 7px #999
+}
+.txtnoticias{
+    margin-left: -30%;
+    width: 90%;
 }
 .vermascaras{
     font-family: 'Crimson Pro', serif;
@@ -540,55 +544,6 @@ margin-left: -15%;
 .imgcaras:hover{
     opacity: 50%;
 }
-/* caras */
-
-/* .revista img{
-    width: 100%;
-}
-.sectioncaras{
-    margin-top: 2%;
-    font-family: 'Crimson Pro', serif;
-}
-.sectioncaras h1{
-    background-color: rgb(81, 119, 163);
-    color: white;
-    font-size: 60px;
-    margin-left: 30%;
-}
-.audienciacaras h2{
-    color:  rgb(146, 145, 145);
-    font-size: 40px;
-}
-.datoscaras{
-    background-color: rgb(146, 145, 145);
-    font-family: 'Crimson Pro', serif;
-}
-.datoscaras h3{
-    font-size: 20px;
-}
-.datoscaras h2{
-    color: white;
-}
-.botones{
-    background-color:  rgb(81, 119, 163);
-    text-decoration: none;
-    color: white;
-    padding: 2%;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-.botones:hover{
-    background-color:  rgb(196, 62, 69);
-    color: white;
-}
-.imgcaras{
-    transition: 0.5s;
-}
-.imgcaras:hover{
-    opacity: 50%;
-}
- */
-
 
 /* dispositivo pequeño */
 @media(max-width: 480px){
@@ -719,5 +674,31 @@ margin-left: -15%;
 }
 .form{
     width: 80%;
+}
+
+/* seccion caras */
+.logocaras img{
+    width: 100%;
+    box-shadow: 4px 4px 7px #999;
+    opacity: 80%;
+}
+.logocaras{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.imgsrevistas img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 70%;
+    margin-bottom: -25%;
+    box-shadow: 4px 4px 7px #999;
+}
+.videocaras{
+    position: relative;
+    width: 80%;
+    left: 11%;
+    top: -50%;
+    box-shadow: 4px 4px 7px #999;
 }
 }
