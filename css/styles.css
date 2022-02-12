@@ -16,6 +16,18 @@ video{
     width: 100%;
     object-fit: cover;
 }
+.videoresponsive{
+    display: none;
+    position: absolute;
+    top: -6%;
+    left: 0;
+    bottom: -5%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide{
+    background-color: white;
+}
 .capa{
     position: absolute;
     top: 0;
@@ -102,12 +114,6 @@ video{
 .botoncontacto:hover{
     background-color: white;
     color: rgb(173, 130, 73);
-}
-.imgsmarcas{
-    background-color: white;
-    position: relative;
-    z-index: 2;
-    padding-top: 2%;
 }
 .marcastv:hover, .marcanoticias:hover, .reperfilar:hover, .marcaperfil:hover{
     transform: scale(1.2);
@@ -601,6 +607,15 @@ margin-left: -15%;
 
 /* dispositivo pequeño */
 @media(max-width: 480px){
+.videoresponsive{
+    display: block;
+}
+.imgsmarcas{
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    z-index: 2;
+    padding-top: -2%;
+}
 .empresa h3{
     font-size: 15px;
 }
@@ -611,12 +626,13 @@ margin-left: -15%;
     padding-top: -1%;
 }
 .titulo h1{
-    font-size: 25px;
+    font-size: 40px;
+    width: 100%;
     margin-top: 10%;
     margin-left: 2%;
     }
 .titulo h2{
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 0%;
         margin-left: 2%;
 
@@ -624,15 +640,18 @@ margin-left: -15%;
 .botoncontacto{
     position: absolute;
         margin-top: -10%;
-        width: 20%;
-        font-size: 10px;
+        width: 35%;
+        font-size: 20px;
         margin-left: 2%;
     }
 .slide{
-    margin-top: -15%;
+    margin-top: 20%;
+    background-color: white;
 }
 .subtitulo h4{
-    margin-top: -150%;
+    margin-top: -100%;
+    margin-bottom: -10%;
+    position: relative;
 }
     .columnauno{
         background-color: rgb(224, 224, 224);
