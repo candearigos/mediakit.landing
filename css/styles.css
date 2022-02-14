@@ -605,11 +605,35 @@ margin-left: -15%;
     width: 40%;
 }
 
+
+/* Buenos Aires Times */
+.imgnportada img{
+    width: 100%;
+}
+.containerbsas{
+    background-color:  rgb(57, 72, 85);
+    
+}
+.textobsas{
+    width: 60%;
+    font-family: 'Crimson Pro', serif;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+
+}
+.datosbsas{
+    margin-top: 5%;
+}
+
 /* dispositivo pequeño */
 @media(max-width: 480px){
 .videoresponsive{
     display: block;
 }
+
 .imgsmarcas{
     background-color: rgba(255, 255, 255, 0);
     position: relative;
