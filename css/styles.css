@@ -408,50 +408,49 @@ margin-left: -15%;
     padding: 2%;
 }
 /* carasopciondos */
-.seccionrevistacaras nav{
-    background-color:rgb(57, 72, 85)
-}
-.bodycaras{
-    background-color: rgb(243, 243, 243);
-}
-.logocaras img{
-    width: 100%;
-    box-shadow: 4px 4px 7px #999;
-    opacity: 80%;
-}
-.logocaras{
-    width: 50%;
-}
-.imgsrevistas img{
-    width: 40%;
-    margin-left: 13%;
-    margin-top: 3%;
-    margin-bottom: -25%;
-    box-shadow: 4px 4px 7px #999;
-}
 .videocaras{
-    position: relative;
-    width: 40%;
-    left: 57%;
-    top: -30%;
-    box-shadow: 4px 4px 7px #999;
+    position: absolute;
+    top: -6%;
+    left: 0;
+    bottom: -5%;
+    width: 80%;
+    object-fit: cover;
 }
-.cajita{
-   background-color: white;
-   margin-left: 5%;
-   padding-top: 2%;
-   padding-bottom: 2%;
-   display: flex;
-   flex-wrap: wrap;
-   box-shadow: 4px 4px 7px #999;
-   margin-bottom: -5%;
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:black ;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
 }
-.cajitados{
-    margin-left: 13.2%;
-    background-color: white;
-    font-family: 'Crimson Pro', serif;
-    box-shadow: 4px 4px 7px #999;
+.videocaras img{
+    transform: rotate(90deg);
+    width: 51%;
+    margin-left: 90%;
+    margin-top: 9.6% ;
 }
+
+.descripcioncaras{
+        background-color:rgb(57, 72, 85);
+        color: white;
+        margin-top: 48%;
+        position: relative;
+}
+.descripcioncaras h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    padding: 2%;
+}
+    .descripcioncaras p{
+        width: 60%;
+        margin-left: 20%;
+        padding: 2%;
+        font-family: 'Crimson Pro', serif
+    }
+
 .tituloaudienciacaras h2{
     font-family: 'Open Sans', sans-serif;
 }
@@ -627,7 +626,74 @@ margin-left: -15%;
 .datosbsas{
     margin-top: 5%;
 }
+.cajitadosbsas{
+    border: 5px solid  rgb(57, 72, 85);
+    width: 90%;
+    margin-left: 5%;
+    padding: 2%;
+    color: rgb(57, 72, 85);
+    font-family: 'Crimson Pro', serif;
+}
+.cajitadosbsas h1{
+    font-family: 'Open Sans', sans-serif;
+}
+/* perfil */
+.sectionuno img{
+    width: 100%;
+}
+.descripcionperfil{
+    background-color:rgb(57, 72, 85);
+    color: white;
+    margin-top: 53%;
+    position: relative;
+}
+.descripcionperfil p{
+    width: 60%;
+    margin-left: 20%;
+    padding: 2%;
+    font-family: 'Crimson Pro', serif
+}
+.cajitadosperfil{
+    background-color:  rgb(128, 136, 139);
+    font-family: 'Crimson Pro', serif;
+    width: 100%;
+    margin-top: -1.5%;
+    padding: 2%;
+}
+.cajitadosperfil i{
+    font-size: 50px;;
+}
+.cajitadosperfil h1{
+    font-family: 'Open Sans', sans-serif;
+}
 
+/* noticias */
+.videonoticias{
+        position: absolute;
+        top: -6%;
+        left: 0;
+        bottom: -5%;
+        width: 80%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    
+    .capa{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background:black ;
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+    }
+.logonoticias img{
+  width: 30%;
+  margin-top: 25%;
+  position: relative;
+  margin-left: 35%;
+  margin-bottom: -35%;
+}
 /* dispositivo pequeño */
 @media(max-width: 480px){
 .videoresponsive{
