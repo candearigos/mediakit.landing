@@ -428,11 +428,15 @@ margin-left: -15%;
 }
 .videocaras img{
     transform: rotate(90deg);
-    width: 51%;
+    width: 50.5%;
     margin-left: 90%;
     margin-top: 9.6% ;
 }
-
+.revistaschicas img{
+    width: 80%;
+    margin-left: 10%;
+    padding: 5%;
+}
 .descripcioncaras{
         background-color:rgb(57, 72, 85);
         color: white;
