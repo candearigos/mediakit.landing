@@ -694,6 +694,8 @@ margin-left: -15%;
   margin-left: 35%;
   margin-bottom: -35%;
 }
+/*  */
+
 /* dispositivo pequeño */
 @media(max-width: 480px){
 .videoresponsive{
