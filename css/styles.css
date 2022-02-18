@@ -698,8 +698,42 @@ margin-left: -15%;
   margin-left: 35%;
   margin-bottom: -35%;
 }
-/*  */
+/* LUZ */
+.imgnportadaluz img{
+    width: 100%;
+    margin-top: 10%;
 
+}
+.empresaluz{
+    font-family: 'Crimson Pro', serif;
+    padding-top: 8%;
+    padding-bottom: 0%;
+    margin-top: 10%;
+    position: relative;
+    z-index: 3;
+    margin-top: -10%;
+    background-color:rgb(57, 72, 85) ;
+}
+.empresaluz a{
+    text-decoration: none;
+    color: white;
+}
+.empresaluz img{
+    width: 3%;
+    position: absolute;
+    margin-left: 41.5%;
+    padding-top: 0%;
+    z-index: 3;
+}
+/* hombre */
+.logohombre img{
+    width: 20%;
+    margin-top: 18%;
+    opacity: 80%;
+    position: relative;
+    margin-left: 40%;
+    margin-bottom: -35%;
+  }
 /* dispositivo pequeño */
 @media(max-width: 480px){
 .videoresponsive{
