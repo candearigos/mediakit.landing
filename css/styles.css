@@ -775,7 +775,12 @@ margin-left: -15%;
     color:rgb(57, 72, 85);
     border:2px solid rgb(57, 72, 85) ;
 }
-
+/* radio */
+.radio img{
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 4px 4px 7px #999
+}
 /* dispositivo pequeño */
 @media(max-width: 480px){
 .videoresponsive{
