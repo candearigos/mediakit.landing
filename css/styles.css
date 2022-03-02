@@ -752,12 +752,12 @@ margin-left: -10%;
   }
   .tituloeventos h1{
       position: absolute;
-      top: 60%;
+      top: 70%;
       justify-content: center;
       padding: 3%;
       font-family: 'Open Sans', sans-serif;
       color:rgb(173, 130, 73);
-      background-color: rgba(255, 255, 255, 0.678);
+      background-color: rgba(255, 255, 255, 0.781);
       width: 100%;
   }
   .descripcioneventos{
