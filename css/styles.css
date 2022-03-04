@@ -807,6 +807,9 @@ margin-left: -10%;
     color:rgb(173, 130, 73);
     border:2px solid rgb(57, 72, 85) ;
 }
+.imgnportadatv img{
+    margin-top: 10%;
+}
 /* dispositivo pequeño */
 @media(max-width: 480px){
     .body{
