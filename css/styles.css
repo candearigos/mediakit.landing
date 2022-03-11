@@ -178,9 +178,14 @@ video{
     color:rgb(173, 130, 73) ;
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
+    text-decoration: none;
 }
 .pline:hover, .pbrand:hover{
     background-color: white;
+    text-decoration: none;
+}
+.pbrand a{
+    text-decoration: none;
 }
 
 /* section 4 */
