@@ -285,6 +285,9 @@ margin-left: 0%;
     padding-top: 2%;
     padding-bottom: 2%;  
 }
+.mockupbsastimes img{
+    display: none;
+}
 .mockup img{
     width: 160%;
     margin-top: 90%;
@@ -918,7 +921,6 @@ margin-left: 0%;
         font-size: 30px;
     }
     /* audiencia */
-    /* audiencia */
 .audienciauno img{
     display: none;
 }
@@ -937,42 +939,6 @@ margin-left: 0%;
 .tituloaudiencia h2{
     font-size: 30px;
 }
-.circulouno p{
-    margin-top: -215%;
-    margin-left: 40%;
-}
-.circulodos p{
-    margin-top: -138%;
-    margin-left: 43%;
-}
-.circulotres p{
-    margin-top: -69%;
-    margin-left: 17%;
-}
-.circulocuatro p{
-    margin-top: -152%;
-    margin-left: 25%;
-}
-.circulocinco p{
-    margin-top: -205%;
-    margin-left: 86%;
-}
-.circuloseis p{
-    margin-top: -140%;
-    margin-left: 76%;
-}
-.circulosiete p{
-    margin-top: -85%;
-    margin-left: 70%;
-}
-.circuloocho p{
-    margin-top: -85%;
-    margin-left: 15%;
-}
-.circulonueve p{
-    margin-top: -11%;
-    margin-left: 84%;
-}
 .sectiontres h1{
     font-size: 30px;
 }
@@ -981,6 +947,32 @@ margin-left: 0%;
 }
 .nuestrasmarcas{
     font-size: 30px;
+}
+.carasimg, .noticiasimgdos, .mockupnoticias{
+    display: none;
+}
+.mockup img{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+.mockupcaras img{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+.mockupbsastimes img{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+.mockupparabrisas img{
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 53%;
 }
 .misproductos p, .misproductos h3, .misproductos a{
     width: 80%;
