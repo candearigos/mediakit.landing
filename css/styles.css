@@ -453,7 +453,8 @@ margin-left: 0%;
         width: 60%;
         margin-left: 20%;
         padding: 2%;
-        font-family: 'Crimson Pro', serif
+        font-family: 'Crimson Pro', serif;
+        font-size: 20px;
     }
 
 .tituloaudienciacaras h2{
@@ -656,7 +657,8 @@ margin-left: 0%;
     width: 60%;
     margin-left: 20%;
     padding: 2%;
-    font-family: 'Crimson Pro', serif
+    font-family: 'Crimson Pro', serif;
+    font-size: 20px;
 }
 .cajitadosperfil{
     background-color:  rgb(128, 136, 139);
@@ -927,9 +929,9 @@ margin-left: 0%;
 }
 .audienciados img{
     display: block;
-    width: 170%;
-    margin-left: -18%;
-    margin-top: -15%
+    width: 150%;
+    margin-left: 0%;
+    margin-top: -5%
 
 }
 .tituloaudiencia h1{
