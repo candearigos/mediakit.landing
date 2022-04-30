@@ -133,6 +133,7 @@ video{
     margin-bottom: -3.8%;
     font-family: 'Crimson Pro', serif;
     margin-top: 8%;
+    font-size: 30px;
 }
 .strong{
     font-size: 30px;
@@ -162,7 +163,24 @@ video{
     margin-left: 35%
    
 }
-
+/* audiencia */
+.carousel-caption{
+   position: absolute ;
+   margin-left: 40%;
+   background-color:rgb(173, 130, 73) ;
+   color: white;
+   padding: 10%;
+   top: -5%;
+}
+.carousel-caption h2{
+    padding-top: 30%;
+    color: rgb(57, 72, 85);
+    font-size: 50px;
+}
+.papel{
+    width: 60%;
+    margin-left: 20%
+}
 /* section 3 */
 .sectiontres{
     background-color:rgb(57, 72, 85);
@@ -744,7 +762,50 @@ margin-left: 0%;
     margin-left: 40%;
     margin-bottom: -35%;
   }
-
+/* branded */
+.titulobranded h1{
+    position: absolute;
+    top: 70%;
+    justify-content: center;
+    padding: 3%;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(173, 130, 73);
+    background-color:rgb(57, 72, 85);
+    width: 100%;
+}
+.branded{
+    background-color: rgb(163, 163, 163);
+    color:white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    padding: 3%;
+    margin-top: -2%;
+    position: relative;
+}
+.branded h4{
+    width: 70%;
+    margin-left: 15%;
+}
+.branded h3{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(57, 72, 85);
+    margin-top: 1%;
+    font-size: 30px;
+    padding-top: 2%;
+}
+.brandedadhoc h2{
+    color:rgb(173, 130, 73);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    margin-top: 5%;
+}
+.brandedadhoc p{
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
   /* eventos */
   .eventosuno img{
       width: 100%;
@@ -756,7 +817,7 @@ margin-left: 0%;
       padding: 3%;
       font-family: 'Open Sans', sans-serif;
       color:rgb(173, 130, 73);
-      background-color: rgba(255, 255, 255, 0.781);
+      background-color:rgba(225, 225, 225, 0.918);
       width: 100%;
   }
   .descripcioneventos{

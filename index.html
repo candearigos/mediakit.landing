@@ -17,14 +17,9 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body class="body">
-    <section class="primerparte">
-    <header class="header">
-            <div class="empresa">    
-                <h3 class=" empresa text-center text-white">Perfil</h3>
-            </div>
-    </header>      
+    <section class="primerparte">   
     <section class="titulo">
-        <div class="container tituloppal mt-5">
+        <div class="container tituloppal">
             <video muted autoplay loop>
                 <source src="imgs/drone_.mp4" type="video/mp4">
             </video>
@@ -82,14 +77,14 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12 columnauno text-center">
                     <h2 class="mb-5 animado">POR QUÉ</h2>
-                    <h3 class="animado">26 Millones </h3> 
-                    <h4 class="animado">VISITANTES ÚNICOS</h4>
+                    <h3 class="animado">18 Millones </h3> 
+                    <h4 class="animado">USUARIOS</h4>
                     <h3 class="animado">8 Millones</h3>
                     <h4 class="animado">SEGUIDORES EN RRSS</h4>
                     <h3 class="animado">750 Mil</h3>
                     <h4 class="animado">LECTORES PAPEL</h4>
-                    <h3 class="animado">800 Mil</h3>
-                    <h4 class="animado">RADIO ESCUCHAS</h4>
+                    <h3 class="animado">200 Mil</h3>
+                    <h4 class="animado">RADIO PERFIL APP</h4>
                     <br/>
                     <p>Fuente: COMSCORE</p>
                 </div>
@@ -111,16 +106,72 @@
                 <h1 class="animado">PERFIL</h1>
                 <h2 class="animado">UN medio para TODAS las audiencias</h2>
             </div>
-            <div class="row mt-5 mb-5">
-              <div class="col-8">
-              <div class="audienciauno animado">
-                <img src="imgs/medioaudiencias_Mesa de trabajo 1.png">
+            <!-- carusel -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
               </div>
-              <div class="audienciados animado">
-                <img src="imgs/dispositivos.resposive.jpg">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row">
+                  <div class="col-7">
+                  <img src="imgs.mockup/mockup diapositivos.png"class="d-block w-100" alt="...">
+                </div>
+                  <div class="col-5 carousel-caption">
+                    <h2>DIGITAL</h2>
+                    <h3 class="mt-5 text-white">18 Millones Vu <br/> 8 Millones Usuarios RS</h3>
+                  </div>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="row">
+                    <div class="col-7">
+                      <img src="imgs.mockup/mockuptv.png"class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-5 carousel-caption">
+                    <h2>TELEVISIÓN</h2>
+                    <h3 class="mt-5 text-white">0,7 Raiting <br/> 8 Millones Usuarios RS</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-7">
+                <img src="imgs.mockup/mockups.papel-05.jpg" class="d-block papel" alt="...">
+                </div>
+                <div class="col-5 carousel-caption">
+                  <h2>PAPEL</h2>
+                    <h3 class="mt-5 text-white">750 lectores papel</h3>
+                </div>
               </div>
             </div>
-        </section>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-7">
+                <img src="imgs.mockup/radio.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-5 carousel-caption">
+                  <h2>RADIO</h2>
+                  <h3 class="mt-2 text-white">Radio Perfil - 200 mil Radio escuchas <br/> APP - 300 VU <br/> Home Radio Perfil Web</h3>
+                </div>
+              </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
     </section>
     <hr>
     <section class="sectiontres">
@@ -131,7 +182,7 @@
                 </div>
                 <div class="col-1"></div>
                 <div class="pbrand col-5 text-center animado">
-                    <a href="https://mediakit.perfil.com/proyectos-especiales-y-branded-content"><h2>HIGH UP</h2></a>
+                    <a href="branded.html"><h2>HIGH UP</h2></a>
                 </div>
                 <div class="pline col-5 text-center animado">
                     <h2>CASE OF SUCCESS</h2>
