@@ -131,9 +131,9 @@ video{
     background-color:rgb(57, 72, 85);
     padding: 3%;
     margin-bottom: -3.8%;
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 8%;
-    font-size: 30px;
+    font-size: 25px;
 }
 .strong{
     font-size: 30px;
@@ -203,7 +203,7 @@ video{
     background-color: white;
     text-decoration: none;
 }
-.pbrand a{
+.pbrand a, .pline a{
     text-decoration: none;
 }
 
@@ -903,6 +903,201 @@ margin-left: 0%;
 }
 .imgnportadatv img{
     margin-top: 10%;
+}
+/* casesofsucces */
+.sectionunocases h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: rgb(97, 124, 182);
+    margin-top: 15%;
+}
+.sectionunocases h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.bloques h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.caracteristicas{
+    background-color: rgb(57, 72, 85) ;
+    color: rgb(173, 130, 73);
+    padding: 10%;
+    margin-right: 1%;
+    border-radius: 5%;
+}
+.caracteristicas h4{
+    font-size: 30px;
+}
+.textobranded{
+    font-family: 'Crimson Pro', serif;
+}
+.mostrarArriba{
+    animation: mostrarArriba 1s
+}
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(60px)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.barranavegacion{
+    background-color: rgb(97, 124, 182);
+}
+.icono{
+    margin-left: 5%;
+}
+.botonuno, .botondos{
+    text-decoration: none;
+    background-color: rgb(97, 124, 182);
+    font-size: 17px;
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    padding: 4%;
+    transition: 1s;
+}
+.botondos{
+    margin-right: 5%;
+    border-radius: 5%;
+    padding: 9%;
+}
+.botonuno{
+    border-radius: 3%;
+    margin-left: 16%;
+
+}
+.botonuno:hover, .botondos:hover{
+    color: white;
+    background-color: gray;
+}
+.soloresponsive{
+    display: none;
+}
+.sectionuno{
+    font-family: 'Crimson Pro', serif;
+    margin-top: 10%;
+}
+.sectionuno h1{
+    color: rgb(97, 124, 182);
+}
+.sectiondos{
+    font-family: 'Crimson Pro', serif;
+}
+
+/* cards */
+.carduno img{
+    width: 100%;
+}
+.carduno i{
+    font-size: 28px;
+    margin-left: 40%;
+   position: relative;
+   top: -10%;
+   color: rgb(204, 161, 112);
+   transition: 1s;
+}
+.carduno i:hover{
+    color: rgb(167, 186, 228);
+}
+.vermas{
+    text-decoration: none;
+    background-color: rgb(204, 161, 112) ;
+    color: white;
+    border-radius: 5%;
+    padding: 2%;
+    transition: 1s;
+}
+.vermas:hover{
+    background-color: rgb(97, 124, 182);
+    color: white;
+}
+.solosubscriptores{
+    font-family: 'Crimson Pro', serif;
+}
+.botontres{
+    display: none;
+}
+.solosubscriptores h5 a{
+    text-decoration: none;
+    background-color:  rgb(204, 161, 112);
+    color: white;
+    padding: 0.5%;
+    border-radius: 2%;
+    transition: 1s;
+}
+.solosubscriptores h5 a:hover{
+    background-color: rgb(97, 124, 182);
+}
+.solosubscriptores h4{
+    font-size: 30px;
+}
+/* dispositivo pequeño */
+@media(max-width: 480px){
+.sectionuno{
+    margin-top: 5%;
+}
+.soloresponsive{
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin-top: 20%;
+    margin-left: 63%;
+    background-color: rgb(97, 124, 182);
+    font-size: 15px;
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    padding: 2%;
+    width: 38%;
+    border-radius: 3%;
+}
+.soloresponsive:hover{
+    color: white;
+    background-color: gray;
+}
+.botonuno{
+    display: none;
+}
+.botondos{
+   position: absolute;
+   left: 80%;
+   padding: 1%;
+   top: 30%;
+}
+.logo img{
+    width: 70%;
+    position: relative;
+    left: 0%;
+    top: 20%;
+}
+.empresa{
+    position: relative;
+    right: 50%;
+    top: 25%;
+    font-family: 'Crimson Pro', serif;
+}
+.icono{
+    margin-left: 10%;
+}
+.card img{
+  margin-left: 30%;
+  position: relative;
+  margin-bottom: -1%;
+}
+.card{
+    width: 80%;
+    margin-left: 10%;
+}
+.carduno i{
+    font-size: 30px;
+    margin-left: 65%;
+   position:relative;
+   margin-top: -15%;
+   color: rgb(204, 161, 112);
+   transition: 1s;
+}
+.solosubscriptores h4{
+    margin-left: 25%;
+}
 }
 /* dispositivo pequeño */
 @media(max-width: 480px){
