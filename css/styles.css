@@ -167,15 +167,15 @@ video{
 .carousel-caption{
    position: absolute ;
    margin-left: 40%;
-   background-color:rgb(173, 130, 73) ;
-   color: white;
+   color: rgb(173, 130, 73);
+   font-family: 'Open Sans', sans-serif;
    padding: 10%;
    top: -5%;
 }
 .carousel-caption h2{
     padding-top: 30%;
     color: rgb(57, 72, 85);
-    font-size: 50px;
+    font-size: 60px;
 }
 .papel{
     width: 60%;
