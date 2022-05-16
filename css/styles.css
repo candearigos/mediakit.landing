@@ -1,45 +1,93 @@
+:root {
+    --main-color: #fff700;
+    --text-color: #171717;
+    --bg-color: #394855;
+    --secondary-color:rgb(173, 130, 73);
+}
+html{
+    overflow-x: hidden;
+}
 .body{
     margin:0;
     padding:0;
     overflow-x: hidden;
+    color: --text-color;
 
 }
-.titulo{
-    min-height: 100vh;
+
+/* VIDEO PRINCIPAL HEADER */
+
+.titulo {
     position: relative;
 }
-video{
-    position: absolute;
-    top: -6%;
-    left: 0;
-    bottom: -5%;
-    width: 100%;
-    object-fit: cover;
-    opacity: 80%;
+.tituloppal {
+    height: 490px;
 }
-.videoresponsive{
-    display: none;
-    position: absolute;
-    top: -6%;
-    left: 0;
-    bottom: -5%;
-    width: 100%;
-    object-fit: cover;
-}
-.slide{
-    background-color: white;
-}
-.capa{
+video {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    background:black ;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
+    object-fit: cover;
+    opacity: 100%;
+    height: 490px;
 }
+.titulo h1{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    animation-name: tituloppal;
+    animation-duration: 5s;
+    position: relative;
+    z-index: 2;
+    margin-top: 15%;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+@keyframes tituloppal{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.titulo h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    animation-name: tituloppal;
+    animation-duration: 7s;
+    position: relative;
+    z-index: 2;
+}
+.titulo p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    z-index: 2;
+    width: auto;
+}
+.titulo p a.botoncontacto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 2%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 0.5em 1em;
+}
+.titulo p a.botoncontacto:hover{
+    background-color: white;
+}
+.slide {
+    background-color: white;
+}
+
+
 .header{
-    background-color:rgb(57, 72, 85);;
+    background-color: var(--bg-color);
 }
 .animado{
     opacity: 0;
@@ -56,6 +104,8 @@ video{
         transform: translateY(0);
     }
 }
+
+
 .empresa{
     font-family: 'Crimson Pro', serif;
     padding-top: 0.5%;
@@ -74,71 +124,41 @@ video{
     padding-top: 0.5%;
     z-index: 3;
 }
-
-.titulo h1{
-    font-size: 80px;
-    color: rgb(173, 130, 73);
-    font-family: 'Open Sans', sans-serif;
-    animation-name: tituloppal;
-    animation-duration: 5s;
-    position: relative;
-    z-index: 2;
-    margin-top: 15%
-}
-@keyframes tituloppal{
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-.titulo h2{
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 5%;
-    animation-name: tituloppal;
-    animation-duration: 7s;
-    position: relative;
-    z-index: 2;
-}
-.botoncontacto{
-    text-decoration: none;
-    position: relative;
-    z-index: 2;
-    border-radius: 2%;
-    background-color:rgb(173, 130, 73) ;
-    color: white;
-    padding: 1.5%;
-    width: 10%;
-    font-family: 'Crimson Pro', serif;
-}
-.botoncontacto:hover{
-    background-color: white;
-    color: rgb(173, 130, 73);
-}
 .marcastv:hover, .marcanoticias:hover, .reperfilar:hover, .marcaperfil:hover{
     transform: scale(1.2);
 }
 .sectiondos{
     font-family: 'Open Sans', sans-serif;
-    margin-top: -6%;
+}
+.subtitulo {
+    background-color: var(--bg-color);
+}
+.subtitulo h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 3%;
+    margin-bottom: -3.8%;
+    margin-top: 8%;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.sectiondos {
+    font-family: 'Crimson Pro',serif;
 }
 .sectiondos h2{
     font-size: 40px;
-    color: rgb(173, 130, 73);
+    color: var(--secondary-color);
 }
-.subtitulo h4{
-    background-color:rgb(57, 72, 85);
-    padding: 3%;
-    margin-bottom: -3.8%;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 8%;
-    font-size: 25px;
-}
+
 .strong{
     font-size: 30px;
-    color: rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
+}
+.cifras h3{
+    align-items: center;
+    justify-content:center;
 }
 .columnauno{
     background-color: rgb(224, 224, 224);
@@ -164,18 +184,30 @@ video{
    
 }
 /* audiencia */
-.carousel-caption{
-   position: absolute ;
-   margin-left: 40%;
-   color: rgb(173, 130, 73);
+.mockupradio img{
+    width: 37.5%;
+    justify-content: center;
+    margin-left: 31.25%;
+}
+.carousel-item .carousel-caption {
+   position: static;
    font-family: 'Open Sans', sans-serif;
-   padding: 10%;
-   top: -5%;
+    margin-top: 12%;
 }
 .carousel-caption h2{
-    padding-top: 30%;
-    color: rgb(57, 72, 85);
-    font-size: 60px;
+    color: var(--bg-color);
+    font-weight: 800;
+    font-size: 40px;
+}
+.mockupdispositivos img{
+    width: 80%;
+    margin-bottom: 10%;
+}
+.mockuptv img{
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 .papel{
     width: 60%;
@@ -194,7 +226,7 @@ video{
     font-size: 40px;
 }
 .sectiontres h2{
-    color:rgb(173, 130, 73) ;
+    color: var(--main-color);;
     font-family: 'Open Sans', sans-serif;
     font-size: 45px;
     text-decoration: none;
@@ -205,11 +237,12 @@ video{
 }
 .pbrand a, .pline a{
     text-decoration: none;
+    font-size: 2rem;
 }
 
 /* section 4 */
 .titulocuatro h2{
-    color:rgb(173, 130, 73) ;
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
 }
@@ -222,23 +255,23 @@ video{
     transform: rotate(180deg);
 }
 .iconos h3{
-    color:rgb(173, 130, 73) ;
+    color: var(--secondary-color);
     font-family: 'Crimson Pro', serif;
 }
 .iconos i:hover{
-    color:rgb(173, 130, 73) ;
+    color: var(--secondary-color);
 }
 /* audiencia */
 .tituloaudiencia h1{
     background-color:rgb(57, 72, 85);
     color: white;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     padding: 2%;
 }
 .tituloaudiencia h2{
-    color:rgb(173, 130, 73) ;
-    font-family: 'Vazirmatn', sans-serif;
+    color: var(--secondary-color);
+    font-family: 'Open Sans', sans-serif;
     font-size: 45px;
     padding-left: 5%;
 }
@@ -307,9 +340,7 @@ margin-left: 0%;
     display: none;
 }
 .mockup img{
-    width: 160%;
-    margin-top: 90%;
-    margin-left: 60%;
+    width: 100%;
 }
 .mockupcaras img{
     width: 170%;
@@ -327,9 +358,7 @@ margin-left: 0%;
     margin-left: 53%;
 }
 .carasimg img, .parabrisasimg img{
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 2%;
+    width: 100%;
     box-shadow: 4px 4px 7px #999;
     display: block;
 }
@@ -341,10 +370,6 @@ margin-left: 0%;
 .noticiasimgdos img {
     display: none;
 }
-.txtnoticias{
-    margin-left: -30%;
-    width: 90%;
-}
 .vermascaras{
     font-family: 'Crimson Pro', serif;
     font-size: 17px;
@@ -355,7 +380,7 @@ margin-left: 0%;
     padding: 1%;
 }
 .vermascaras:hover{
-    background-color: rgb(173, 130, 73);
+    background-color:var(--secondary-color);
     color: white;
 }
 .carastxt h3, .carastxt p{
@@ -364,6 +389,9 @@ margin-left: 0%;
 .carastxt h3{
     font-size: 40px;
 }
+.carastxt h4 {
+    margin-bottom: 0;
+}
 /* contacto */
 
 .contact{
@@ -371,7 +399,7 @@ margin-left: 0%;
     margin-top: 5%;
 }
 .head{
-    color: rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
     border-radius: 5px;
     margin-top: 2%;
@@ -380,7 +408,7 @@ margin-left: 0%;
     font-size: 40px;
 }
 .borde input{
-    border-color:rgb(173, 130, 73);
+    border-color: var(--secondary-color);
     border-radius: 5px;
     border-style: solid;
     width: 60%;
@@ -389,7 +417,7 @@ margin-left: 0%;
 
 }
 .envi input{
-    background-color:rgb(173, 130, 73);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 5px;
     border-style: solid;
@@ -402,20 +430,20 @@ margin-left: 0%;
     background-color: rgb(57, 72, 85);
 }
 .contactosadicionales h2{
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     padding: 2%;
 }
 .ricardoimg, .pabloimg{
     width: 50%;
-    border: 2px solid rgb(173, 130, 73);
+    border: 2px solid var(--secondary-color);
     margin-left: 8%;
     margin-bottom: 3%;
 }
 .contactosadicionales h3{
     font-size: 25px;
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     margin-left: -10%;
@@ -434,16 +462,6 @@ margin-left: 0%;
     bottom: -5%;
     width: 80%;
     object-fit: cover;
-}
-
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background:black ;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
 }
 .videocaras img{
     transform: rotate(90deg);
@@ -542,7 +560,7 @@ margin-left: 0%;
     position:absolute;
     left: 73%;
     top: 18%;
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 45px;
     animation-name: tituloppal;
@@ -554,7 +572,7 @@ margin-left: 0%;
     font-size: 50px;
 }
 .peybc p{
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Crimson Pro', serif;
     font-size: 25px;
     width: 70%;
@@ -573,7 +591,7 @@ margin-left: 0%;
     padding-bottom: 6%;
 }
 .arribacard{
-    color: rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
 }
 .cardspe{
@@ -608,7 +626,7 @@ margin-left: 0%;
     background-color: rgb(224, 224, 224);
 }
 .equipoadhoc h1{
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     padding-top: 5%;
@@ -668,7 +686,7 @@ margin-left: 0%;
 .descripcionperfil{
     background-color:rgb(57, 72, 85);
     color: white;
-    margin-top: 53%;
+    margin-top: 4%;
     position: relative;
 }
 .descripcionperfil p{
@@ -769,7 +787,7 @@ margin-left: 0%;
     justify-content: center;
     padding: 3%;
     font-family: 'Open Sans', sans-serif;
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     background-color:rgb(57, 72, 85);
     width: 100%;
 }
@@ -777,7 +795,7 @@ margin-left: 0%;
     background-color: rgb(163, 163, 163);
     color:white;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     width: 50%;
     padding: 3%;
     margin-top: -2%;
@@ -795,7 +813,7 @@ margin-left: 0%;
     padding-top: 2%;
 }
 .brandedadhoc h2{
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     margin-top: 5%;
@@ -804,7 +822,7 @@ margin-left: 0%;
     font-size: 20px;
     width: 80%;
     margin-left: 10%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
   /* eventos */
   .eventosuno img{
@@ -816,12 +834,12 @@ margin-left: 0%;
       justify-content: center;
       padding: 3%;
       font-family: 'Open Sans', sans-serif;
-      color:rgb(173, 130, 73);
+      color: var(--secondary-color);
       background-color:rgba(225, 225, 225, 0.918);
       width: 100%;
   }
   .descripcioneventos{
-    background-color:rgb(173, 130, 73);
+    background-color: var(--secondary-color);
     color: white;
     margin-top: -2%;
     position: relative;
@@ -857,7 +875,7 @@ margin-left: 0%;
     padding-bottom: 10%;
 }
 .botonradio{
-    background-color:rgb(173, 130, 73);
+    background-color: var(--secondary-color);
     text-decoration: none;
     color: white;
     padding: 1%;
@@ -866,7 +884,7 @@ margin-left: 0%;
 }
 .botonradio:hover{
     background-color:white; 
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     border:2px solid rgb(57, 72, 85) ;
 }
 .radiohome img{
@@ -888,7 +906,7 @@ margin-left: 0%;
 }
 /* tv */
 .botonestv{
-    background-color:rgb(173, 130, 73);
+    background-color: var(--secondary-color);
     text-decoration: none;
     color: white;
     padding: 1%;
@@ -898,7 +916,7 @@ margin-left: 0%;
 }
 .botonestv{
     background-color:white; 
-    color:rgb(173, 130, 73);
+    color: var(--secondary-color);
     border:2px solid rgb(57, 72, 85) ;
 }
 .imgnportadatv img{
@@ -906,20 +924,20 @@ margin-left: 0%;
 }
 /* casesofsucces */
 .sectionunocases h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     color: rgb(97, 124, 182);
     margin-top: 15%;
 }
 .sectionunocases h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sns', sans-serif;
 }
 .bloques h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .caracteristicas{
     background-color: rgb(57, 72, 85) ;
-    color: rgb(173, 130, 73);
+    color: var(--secondary-color);
     padding: 10%;
     margin-right: 1%;
     border-radius: 5%;
@@ -980,9 +998,6 @@ margin-left: 0%;
 .sectionuno h1{
     color: rgb(97, 124, 182);
 }
-.sectiondos{
-    font-family: 'Crimson Pro', serif;
-}
 
 /* cards */
 .carduno img{
@@ -1031,265 +1046,36 @@ margin-left: 0%;
 .solosubscriptores h4{
     font-size: 30px;
 }
-/* dispositivo pequeño */
-@media(max-width: 480px){
-.sectionuno{
-    margin-top: 5%;
-}
-.soloresponsive{
-    text-decoration: none;
-    display: block;
-    color: black;
-    margin-top: 20%;
-    margin-left: 63%;
-    background-color: rgb(97, 124, 182);
-    font-size: 15px;
-    color: white;
-    font-family: 'Crimson Pro', serif;
-    padding: 2%;
-    width: 38%;
-    border-radius: 3%;
-}
-.soloresponsive:hover{
-    color: white;
-    background-color: gray;
-}
-.botonuno{
-    display: none;
-}
-.botondos{
-   position: absolute;
-   left: 80%;
-   padding: 1%;
-   top: 30%;
-}
-.logo img{
-    width: 70%;
-    position: relative;
-    left: 0%;
-    top: 20%;
-}
-.empresa{
-    position: relative;
-    right: 50%;
-    top: 25%;
-    font-family: 'Crimson Pro', serif;
-}
-.icono{
-    margin-left: 10%;
-}
-.card img{
-  margin-left: 30%;
-  position: relative;
-  margin-bottom: -1%;
-}
-.card{
-    width: 80%;
-    margin-left: 10%;
-}
-.carduno i{
-    font-size: 30px;
-    margin-left: 65%;
-   position:relative;
-   margin-top: -15%;
-   color: rgb(204, 161, 112);
-   transition: 1s;
-}
-.solosubscriptores h4{
-    margin-left: 25%;
-}
-}
-/* dispositivo pequeño */
-@media(max-width: 480px){
-    .body{
-        margin:0;
-        padding:0;
-        overflow-x: hidden;
-    
+
+@media (min-width: 576px) {
+    .titulo h1 {
+        font-size: 3rem;
     }
-.videoresponsive{
-    display: block;
 }
 
-.imgsmarcas{
-    background-color: rgba(255, 255, 255, 0);
-    position: relative;
-    z-index: 2;
-    padding-top: -2%;
-}
-.empresa h3{
-    font-size: 15px;
-}
-.empresa img{
-    width: 6%;
-    position: absolute;
-    margin-left: 34%;
-    padding-top: -1%;
-}
-.titulo h1{
-    font-size: 40px;
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 2%;
+@media (min-width: 768px) {
+    .carousel-caption h2{
+        font-size: 36px;
     }
-.titulo h2{
-        font-size: 25px;
-        margin-top: 0%;
-        margin-left: 2%;
+}
 
+@media (min-width: 992px) {
+    .tituloppal {
+        height: 90vh;
     }
-.botoncontacto{
-    position: absolute;
-        margin-top: -10%;
-        width: 35%;
-        font-size: 20px;
-        margin-left: 2%;
+    video {
+        height: 90vh;
     }
-.slide{
-    margin-top: 25%;
-    background-color: white;
-}
-.subtitulo h4{
-    margin-top: -85%;
-    margin-bottom: -10%;
-    position: relative;
-}
-    .columnauno{
-        background-color: rgb(224, 224, 224);
+    .titulo h1 {
+        font-size: 3.4rem;
+        margin-top: 10%;
     }
-    .columnauno h3{
-        font-size: 20px;
+}
+@media (min-width: 1200px) {
+    .titulo h1 {
+        font-size: 4.5rem;
     }
-    .columnauno h4{
-        font-family: 'Crimson Pro', serif;
+    .subtitulo h4 {
+        font-size: 28px;
     }
-    .columnauno h2, .columnados h2{
-        font-size: 30px;
-    }
-    .datos{
-        margin-top: -15%;
-    }
-    
-    .sectiontres h2{
-        font-size: 40px;
-    }
-    .titulocuatro h2{
-        font-size: 30px;
-    }
-    .iconos i{
-        font-size: 30px;
-    }
-    /* audiencia */
-.audienciauno img{
-    display: none;
-}
-.audienciados img{
-    display: block;
-    width: 150%;
-    margin-left: 0%;
-    margin-top: -5%
-
-}
-.tituloaudiencia h1{
-    margin-top: 30%;
-    font-size: 30px;
-    padding-left: 5%;
-}
-.tituloaudiencia h2{
-    font-size: 30px;
-}
-.sectiontres h1{
-    font-size: 30px;
-}
-.pbrand h2, .pline h2{
-    font-size: 35px;
-}
-.nuestrasmarcas{
-    font-size: 30px;
-}
-.carasimg, .noticiasimgdos, .mockupnoticias{
-    display: none;
-}
-.mockup img{
-    width: 50%;
-    margin-top: 10%;
-    margin-left: 25%;
-    margin-bottom: 2%;
-}
-.mockupcaras img{
-    width: 50%;
-    margin-top: 2%;
-    margin-left: 25%;
-}
-.mockupbsastimes img{
-    display: block;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 0%;
-    margin-bottom: 10%;
-}
-.mockupparabrisas img{
-    width: 30%;
-    margin-top: 3%;
-    margin-left: 53%;
-}
-.misproductos p, .misproductos h3, .misproductos a{
-    width: 80%;
-    margin-left: 10%;
-}
-.nuestrasmarcas img{
-    width: 60%;
-}
-.noticiasimgdos img{
-    display: block;
-    width: 70%;
-    margin-top: -5%;
-    box-shadow: 4px 4px 7px #999;
-    margin-left: 15%;
-}
-.carasimg img, .parabrisasimg img{
-    width: 70%;
-    margin-left: 15%;
-}
-.parabrisasimg img{
-    display: nonef;
-}
-.noticiasimg img{
-    display: none;
-}
-.form{
-    width: 80%;
-}
-.borde input{
-    width: 100%;
-    margin-left: 12%;
-}
-.envi input{
-    margin-left: 25%;
-}
-/* seccion caras */
-.logocaras img{
-    width: 100%;
-    box-shadow: 4px 4px 7px #999;
-    opacity: 80%;
-}
-.logocaras{
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 10%;
-}
-.imgsrevistas img{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 70%;
-    margin-bottom: -25%;
-    box-shadow: 4px 4px 7px #999;
-}
-.videocaras{
-    position: relative;
-    width: 80%;
-    left: 11%;
-    top: -50%;
-    box-shadow: 4px 4px 7px #999;
-}
 }
